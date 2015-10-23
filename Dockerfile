@@ -86,8 +86,6 @@ WORKDIR ${JIRA_HOME}
 # Run Atlassian JIRA as a foreground process by default.
 CMD ["/opt/atlassian/jira/bin/start-jira.sh", "-fg"]
 
-
-
 RUN chmod +x /my_*
 RUN chmod +x /etc/lamp.sh
 CMD ["/my_init"]
