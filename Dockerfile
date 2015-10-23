@@ -1,4 +1,5 @@
 FROM java:8
+FROM centos:7
 
 # Configuration variables.
 ENV JIRA_HOME     /var/atlassian/jira
