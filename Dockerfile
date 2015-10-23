@@ -1,4 +1,4 @@
-FROM java:8
+
 FROM centos:7
 
 # Configuration variables.
@@ -36,9 +36,7 @@ RUN mkdir /etc/workaround-docker-2267
 RUN systemctl disable httpd.service && \
     systemctl disable rsyslog.service
 
-    # Install supervisor. Requires python-setuptools.
-RUN easy_install \
-    supervisor
+FROM java:8
 
 # Install Atlassian JIRA and helper tools and setup initial home
 # directory structure.
